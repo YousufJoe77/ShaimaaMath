@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 
@@ -5,498 +6,666 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>تسليم الواجب  </title>
+  <title>تسليم الواجب</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
   <link
     href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap"
     rel="stylesheet"
   >
 
- 
-<style>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+  <style>
 
-body {
-  font-family: "Cairo", sans-serif;
-  min-height: 100vh;
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-  background:
-    linear-gradient(
-      135deg,
-      rgba(15, 23, 42, 0.72),
-      rgba(30, 41, 59, 0.55)
-    ),
-    url("—Pngtree—back to school chalkboard with_16297416.jpeg")
-    center center / cover no-repeat fixed;
 
-  color: #172033;
+    /* ================= BODY ================= */
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    body {
+      font-family: "Cairo", sans-serif;
 
-  padding: 35px 15px;
-}
+      min-height: 100vh;
 
+      background:
+        linear-gradient(
+          135deg,
+          rgba(15, 23, 42, 0.72),
+          rgba(30, 41, 59, 0.58)
+        ),
+        url("—Pngtree—back to school chalkboard with_16297416.jpeg")
+        center center / cover no-repeat fixed;
 
-/* ================= CONTAINER ================= */
+      color: #172033;
 
-.container {
-  width: 100%;
-  max-width: 680px;
-}
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
+      padding: 35px 15px;
+    }
 
-/* ================= CARD ================= */
 
-.card {
-  position: relative;
+    /* ================= CONTAINER ================= */
 
-  background: rgba(255, 255, 255, 0.94);
-  backdrop-filter: blur(18px);
-  -webkit-backdrop-filter: blur(18px);
+    .container {
+      width: 100%;
+      max-width: 680px;
+    }
 
-  border: 1px solid rgba(255, 255, 255, 0.65);
 
-  border-radius: 30px;
+    /* ================= CARD ================= */
 
-  padding: 40px;
+    .card {
+      position: relative;
 
-  box-shadow:
-    0 30px 80px rgba(0, 0, 0, 0.25),
-    0 8px 25px rgba(15, 23, 42, 0.12);
+      background: rgba(255, 255, 255, 0.95);
 
-  overflow: hidden;
-}
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
 
+      border: 1px solid rgba(255, 255, 255, 0.7);
 
-/* Decorative glow */
+      border-radius: 30px;
 
-.card::before {
-  content: "";
-  position: absolute;
+      padding: 40px;
 
-  width: 180px;
-  height: 180px;
+      box-shadow:
+        0 30px 80px rgba(0, 0, 0, 0.25),
+        0 8px 25px rgba(15, 23, 42, 0.12);
 
-  background: #6366f1;
-  opacity: 0.08;
+      overflow: hidden;
+    }
 
-  border-radius: 50%;
 
-  top: -90px;
-  right: -70px;
-}
+    /* ================= DECORATION ================= */
 
-.card::after {
-  content: "";
-  position: absolute;
+    .card::before {
+      content: "";
 
-  width: 140px;
-  height: 140px;
+      position: absolute;
 
-  background: #8b5cf6;
-  opacity: 0.07;
+      width: 190px;
+      height: 190px;
 
-  border-radius: 50%;
+      top: -100px;
+      right: -80px;
 
-  bottom: -70px;
-  left: -60px;
-}
+      background: #6366f1;
 
+      opacity: 0.08;
 
-/* ================= HEADER ================= */
+      border-radius: 50%;
 
-.header {
-  position: relative;
-  z-index: 2;
+      pointer-events: none;
+    }
 
-  text-align: center;
 
-  margin-bottom: 32px;
-}
+    .card::after {
+      content: "";
 
+      position: absolute;
 
-.logo {
-  width: 82px;
-  height: 82px;
+      width: 150px;
+      height: 150px;
 
-  margin: 0 auto 18px;
+      bottom: -80px;
+      left: -70px;
 
-  border-radius: 24px;
+      background: #8b5cf6;
 
-  background:
-    linear-gradient(
-      135deg,
-      #4f46e5,
-      #7c3aed
-    );
+      opacity: 0.07;
 
-  color: white;
+      border-radius: 50%;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+      pointer-events: none;
+    }
 
-  font-size: 32px;
-  font-weight: 800;
 
-  box-shadow:
-    0 15px 35px rgba(79, 70, 229, 0.30);
+    /* ================= HEADER ================= */
 
-  transform: rotate(-3deg);
+    .header {
+      position: relative;
 
+      z-index: 2;
 
-    transform 0.25s ease,
-    box-shadow 0.25s ease;
+      text-align: center;
 
-  background:
-    linear-gradient(
-      180deg,
-      #f8fafc,
-      #f1f5f9
-    );
-}
+      margin-bottom: 32px;
+    }
 
 
-.upload-area:hover {
-  border-color: #6366f1;
+    .logo {
+      width: 82px;
+      height: 82px;
 
-  background:
-    linear-gradient(
-      180deg,
-      #f8f7ff,
-      #eef2ff
-    );
+      margin: 0 auto 18px;
 
-  transform: translateY(-2px);
+      border-radius: 24px;
 
-  box-shadow:
-    0 10px 25px rgba(99, 102, 241, 0.08);
-}
+      background:
+        linear-gradient(
+          135deg,
+          #4f46e5,
+          #7c3aed
+        );
 
+      color: white;
 
-.upload-icon {
-  width: 62px;
-  height: 62px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
-  margin: 0 auto 14px;
+      font-size: 32px;
+      font-weight: 800;
 
-  border-radius: 18px;
+      box-shadow:
+        0 15px 35px rgba(79, 70, 229, 0.30);
 
-  background: #eef2ff;
+      transform: rotate(-3deg);
 
-  color: #6366f1;
+      transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+    }
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
 
-  font-size: 29px;
+    .logo:hover {
+      transform: rotate(0deg) scale(1.05);
 
-  transition: 0.25s ease;
-}
+      box-shadow:
+        0 18px 40px rgba(79, 70, 229, 0.35);
+    }
 
 
-.upload-area:hover .upload-icon {
-  background: #6366f1;
-  color: white;
+    .header h1 {
+      font-size: 30px;
 
-  transform: translateY(-3px);
-}
+      font-weight: 900;
 
+      color: #111827;
 
-.upload-area h3 {
-  font-size: 16px;
+      margin-bottom: 7px;
 
-  color: #334155;
+      letter-spacing: -0.5px;
+    }
 
-  margin-bottom: 6px;
 
-  font-weight: 800;
-}
+    .header p {
+      color: #64748b;
 
+      font-size: 14px;
 
-.upload-area p {
-  font-size: 12px;
+      line-height: 1.8;
+    }
 
-  color: #94a3b8;
 
-  line-height: 1.7;
-}
+    /* ================= FORM ================= */
 
+    .form-group {
+      position: relative;
 
-#files {
-  display: none;
-}
+      z-index: 2;
 
+      margin-bottom: 21px;
+    }
 
-/* ================= FILE LIST ================= */
 
-.file-list {
-  margin-top: 15px;
+    label {
+      display: block;
 
-  display: none;
-}
+      margin-bottom: 9px;
 
+      font-size: 14px;
 
-.file-item {
-  display: flex;
+      font-weight: 800;
 
-  align-items: center;
+      color: #334155;
+    }
 
-  justify-content: space-between;
 
-  gap: 12px;
+    /* ================= INPUTS ================= */
 
-  background: #f8fafc;
+    input,
+    select {
+      width: 100%;
 
-  border: 1px solid #e2e8f0;
+      height: 54px;
 
-  padding: 12px 14px;
+      border: 1.5px solid #e2e8f0;
 
-  border-radius: 14px;
+      border-radius: 15px;
 
-  margin-bottom: 8px;
+      padding: 0 17px;
 
-  transition: 0.2s ease;
-}
+      font-family: inherit;
 
+      font-size: 14px;
 
-.file-item:hover {
-  border-color: #c7d2fe;
+      background: #ffffff;
 
-  background: #f8f7ff;
-}
+      color: #172033;
 
+      outline: none;
 
-.file-name {
-  font-size: 13px;
+      transition:
+        border-color 0.25s ease,
+        box-shadow 0.25s ease,
+        transform 0.2s ease;
+    }
 
-  font-weight: 700;
 
-  color: #334155;
+    input::placeholder {
+      color: #a1a9b8;
+    }
 
-  overflow: hidden;
 
-  text-overflow: ellipsis;
+    input:hover,
+    select:hover {
+      border-color: #c7d2fe;
+    }
 
-  white-space: nowrap;
-}
 
+    input:focus,
+    select:focus {
+      border-color: #6366f1;
 
-.file-size {
-  color: #94a3b8;
+      box-shadow:
+        0 0 0 4px rgba(99, 102, 241, 0.10),
+        0 5px 15px rgba(99, 102, 241, 0.06);
 
-  font-size: 11px;
+      transform: translateY(-1px);
+    }
 
-  white-space: nowrap;
-}
 
+    /* ================= UPLOAD ================= */
 
-/* ================= BUTTON ================= */
+    .upload-area {
+      position: relative;
 
-.submit-btn {
-  position: relative;
-  z-index: 2;
+      z-index: 2;
 
-  width: 100%;
-  height: 57px;
+      display: block;
 
-  border: none;
+      border: 2px dashed #cbd5e1;
 
-  border-radius: 16px;
+      border-radius: 20px;
 
-  margin-top: 12px;
+      padding: 34px 20px;
 
-  background:
-    linear-gradient(
-      135deg,
-      #4f46e5,
-      #7c3aed
-    );
+      text-align: center;
 
-  color: white;
+      cursor: pointer;
 
-  font-family: inherit;
+      transition:
+        border-color 0.25s ease,
+        background 0.25s ease,
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
 
-  font-size: 16px;
+      background:
+        linear-gradient(
+          180deg,
+          #f8fafc,
+          #f1f5f9
+        );
+    }
 
-  font-weight: 900;
 
-  cursor: pointer;
+    .upload-area:hover {
+      border-color: #6366f1;
 
-  transition:
-    transform 0.2s ease,
-    box-shadow 0.2s ease,
-    filter 0.2s ease;
+      background:
+        linear-gradient(
+          180deg,
+          #f8f7ff,
+          #eef2ff
+        );
 
-  box-shadow:
-    0 12px 28px rgba(79, 70, 229, 0.25);
-}
+      transform: translateY(-2px);
 
+      box-shadow:
+        0 10px 25px rgba(99, 102, 241, 0.08);
+    }
 
-.submit-btn:hover {
-  transform: translateY(-3px);
 
-  filter: brightness(1.05);
+    .upload-icon {
+      width: 62px;
+      height: 62px;
 
-  box-shadow:
-    0 16px 35px rgba(79, 70, 229, 0.32);
-}
+      margin: 0 auto 14px;
 
+      border-radius: 18px;
 
-.submit-btn:active {
-  transform: translateY(0);
-}
+      background: #eef2ff;
 
+      color: #6366f1;
 
-.submit-btn:disabled {
-  opacity: 0.6;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
-  cursor: not-allowed;
+      font-size: 29px;
 
-  transform: none;
+      transition: 0.25s ease;
+    }
 
-  filter: none;
-}
 
+    .upload-area:hover .upload-icon {
+      background: #6366f1;
 
-/* ================= MESSAGE ================= */
+      color: white;
 
-.message {
-  display: none;
+      transform: translateY(-3px);
+    }
 
-  margin-top: 18px;
 
-  padding: 15px 17px;
+    .upload-area h3 {
+      font-size: 16px;
 
-  border-radius: 14px;
+      color: #334155;
 
-  text-align: center;
+      margin-bottom: 6px;
 
-  font-size: 13px;
+      font-weight: 800;
+    }
 
-  font-weight: 800;
 
-  line-height: 1.7;
-}
+    .upload-area p {
+      font-size: 12px;
 
+      color: #94a3b8;
 
-.success {
-  background: #ecfdf5;
+      line-height: 1.7;
+    }
 
-  color: #047857;
 
-  border: 1px solid #a7f3d0;
-}
+    #files {
+      display: none;
+    }
 
 
-.error {
-  background: #fef2f2;
+    /* ================= FILE LIST ================= */
 
-  color: #b91c1c;
+    .file-list {
+      margin-top: 15px;
 
-  border: 1px solid #fecaca;
-}
+      display: none;
+    }
 
 
-/* ================= FOOTER ================= */
+    .file-item {
+      display: flex;
 
-.footer {
-  position: relative;
-  z-index: 2;
+      align-items: center;
 
-  text-align: center;
+      justify-content: space-between;
 
-  margin-top: 22px;
+      gap: 12px;
 
-  color: #94a3b8;
+      background: #f8fafc;
 
-  font-size: 11px;
-}
+      border: 1px solid #e2e8f0;
 
+      padding: 12px 14px;
 
-/* ================= MOBILE ================= */
+      border-radius: 14px;
 
-@media (max-width: 600px) {
+      margin-bottom: 8px;
 
-  body {
-    padding: 15px 10px;
+      transition: 0.2s ease;
+    }
 
-    background-attachment: scroll;
-  }
 
-  .card {
-    padding: 28px 18px;
+    .file-item:hover {
+      border-color: #c7d2fe;
 
-    border-radius: 24px;
-  }
+      background: #f8f7ff;
+    }
 
-  .header {
-    margin-bottom: 27px;
-  }
 
-  .logo {
-    width: 72px;
-    height: 72px;
+    .file-name {
+      font-size: 13px;
 
-    border-radius: 21px;
+      font-weight: 700;
 
-    font-size: 28px;
-  }
+      color: #334155;
 
-  .header h1 {
-    font-size: 24px;
-  }
+      overflow: hidden;
 
-  .header p {
-    font-size: 13px;
-  }
+      text-overflow: ellipsis;
 
-  input,
-  select {
-    height: 52px;
+      white-space: nowrap;
+    }
 
-    border-radius: 14px;
-  }
 
-  .upload-area {
-    padding: 28px 15px;
-  }
+    .file-size {
+      color: #94a3b8;
 
-  .submit-btn {
-    height: 54px;
-  }
-}
+      font-size: 11px;
 
+      white-space: nowrap;
+    }
 
-/* ================= SMALL PHONES ================= */
 
-@media (max-width: 380px) {
+    /* ================= BUTTON ================= */
 
-  .card {
-    padding: 24px 15px;
-  }
+    .submit-btn {
+      position: relative;
 
-  .header h1 {
-    font-size: 22px;
-  }
+      z-index: 2;
 
-  .upload-area {
-    padding: 25px 12px;
-  }
-}
-</style>
+      width: 100%;
 
->
+      height: 57px;
+
+      border: none;
+
+      border-radius: 16px;
+
+      margin-top: 12px;
+
+      background:
+        linear-gradient(
+          135deg,
+          #4f46e5,
+          #7c3aed
+        );
+
+      color: white;
+
+      font-family: inherit;
+
+      font-size: 16px;
+
+      font-weight: 900;
+
+      cursor: pointer;
+
+      transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        filter 0.2s ease;
+
+      box-shadow:
+        0 12px 28px rgba(79, 70, 229, 0.25);
+    }
+
+
+    .submit-btn:hover {
+      transform: translateY(-3px);
+
+      filter: brightness(1.05);
+
+      box-shadow:
+        0 16px 35px rgba(79, 70, 229, 0.32);
+    }
+
+
+    .submit-btn:active {
+      transform: translateY(0);
+    }
+
+
+    .submit-btn:disabled {
+      opacity: 0.6;
+
+      cursor: not-allowed;
+
+      transform: none;
+
+      filter: none;
+    }
+
+
+    /* ================= MESSAGE ================= */
+
+    .message {
+      display: none;
+
+      margin-top: 18px;
+
+      padding: 15px 17px;
+
+      border-radius: 14px;
+
+      text-align: center;
+
+      font-size: 13px;
+
+      font-weight: 800;
+
+      line-height: 1.7;
+    }
+
+
+    .success {
+      background: #ecfdf5;
+
+      color: #047857;
+
+      border: 1px solid #a7f3d0;
+    }
+
+
+    .error {
+      background: #fef2f2;
+
+      color: #b91c1c;
+
+      border: 1px solid #fecaca;
+    }
+
+
+    /* ================= FOOTER ================= */
+
+    .footer {
+      position: relative;
+
+      z-index: 2;
+
+      text-align: center;
+
+      margin-top: 22px;
+
+      color: #94a3b8;
+
+      font-size: 11px;
+    }
+
+
+    /* ================= MOBILE ================= */
+
+    @media (max-width: 600px) {
+
+      body {
+        padding: 15px 10px;
+
+        background-attachment: scroll;
+      }
+
+
+      .card {
+        padding: 28px 18px;
+
+        border-radius: 24px;
+      }
+
+
+      .header {
+        margin-bottom: 27px;
+      }
+
+
+      .logo {
+        width: 72px;
+        height: 72px;
+
+        border-radius: 21px;
+
+        font-size: 28px;
+      }
+
+
+      .header h1 {
+        font-size: 24px;
+      }
+
+
+      .header p {
+        font-size: 13px;
+      }
+
+
+      input,
+      select {
+        height: 52px;
+
+        border-radius: 14px;
+      }
+
+
+      .upload-area {
+        padding: 28px 15px;
+      }
+
+
+      .submit-btn {
+        height: 54px;
+      }
+
+    }
+
+
+    /* ================= SMALL PHONES ================= */
+
+    @media (max-width: 380px) {
+
+      .card {
+        padding: 24px 15px;
+      }
+
+
+      .header h1 {
+        font-size: 22px;
+      }
+
+
+      .upload-area {
+        padding: 25px 12px;
+      }
+
+    }
+
+  </style>
+
 </head>
+
 
 <body>
 
@@ -505,8 +674,6 @@ body {
     <div class="card">
 
       <div class="header">
-
-        
 
         <h1>
           Miss ElShaimaa Mohamed
@@ -579,10 +746,12 @@ body {
             <option value="Grade 9">
               Grade 9
             </option>
+
             <option value="IG Grade 10">
               IG Grade 10
             </option>
-             <option value="IG Grade 11">
+
+            <option value="IG Grade 11">
               IG Grade 11
             </option>
 
@@ -597,6 +766,7 @@ body {
           <label>
             ملفات الواجب
           </label>
+
 
           <label
             class="upload-area"
@@ -1193,3 +1363,4 @@ body {
 </body>
 
 </html>
+```
